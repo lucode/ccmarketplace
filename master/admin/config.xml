@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<config>
+
+    <fieldset name="general" label="CCMP_CONFIG_GENERAL_SETTINGS">
+
+        <field name="expirationDuration" type="text" default="30" label="CCMP_CONFIG_DURATION" description="CCMP_CONFIG_DURATION_DESCRIPTION" />
+
+        <field name="expirationMode" type="list" default="0" label="CCMP_CONFIG_ENTRY_EXPIRATION" description="CCMP_CONFIG_ENTRY_EXPIRATION_DESCRITPION">
+            <option value="0">CCMP_CONFIG_DISABLED</option>
+            <option value="1">CCMP_CONFIG_UNPUBLISH</option>
+            <option value="2">CCMP_CONFIG_DELETE</option>
+        </field>
+
+        <field name="expirationCleanup" type="radio" default="0" label="CCMP_CONFIG_CLEANUP_UNPUBLISHED" description="CCMP_CONFIG_CLEANUP_UNPUBLISHED_DESCRIPTION">
+            <option value="0">CCMP_CONFIG_NO</option>
+            <option value="1">CCMP_CONFIG_YES</option>
+        </field>
+
+        <field name="expirationCleanupDuration" type="text" default="60" label="CCMP_CONFIG_CLEANUP_DURATION" description="CCMP_CONFIG_CLEANUP_DURATION_DESCRIPTION" />
+
+
+        <field name="showContactDetailsToPublic" type="radio" default="0" label="CCMP_CONFIG_CONTACT_DETAILS_PUBLIC" description="CCMP_CONFIG_CONTACT_DETAILS_PUBLIC_DESCRIPTION">
+            <option value="0">CCMP_CONFIG_NO</option>
+            <option value="1">CCMP_CONFIG_YES</option>
+        </field>
+
+
+        <field name="commercialEntries" type="radio" default="0" label="CCMP_CONFIG_COMMERCIAL_ENTRIES" description="CCMP_CONFIG_COMMERCIAL_ENTRIES_DESCRIPTION">
+            <option value="0">CCMP_CONFIG_NO</option>
+            <option value="1">CCMP_CONFIG_YES</option>
+        </field>
+
+
+        <field name="backendMode" type="list" default="0" label="CCMP_CONFIG_BACKEND_MODE" description="CCMP_CONFIG_BACKEND_MODE_DESCRIPTION" >
+            <option value="0">CCMP_CONFIG_DISABLED</option>
+            <option value="1">CCMP_CONFIG_ENABLED</option>
+        </field>
+
+        <field name="metaRobots" type="text" default="index, follow" label="CCMP_CONFIG_META_ROBOTS" description="CCMP_CONFIG_META_ROBOTS_DESCRIPTION" />
+
+
+        <field name="categoryListLength" type="text" default="" label="CCMP_CONFIG_NUMBER_CATEGORY_LIST" description="CCMP_CONFIG_NUMBER_CATEGORY_LIST_DESCRIPTION" />
+
+        <field name="headlineLength" type="text" default="" label="CCMP_CONFIG_NUMBER_HEADLINE_CHARACTERS" description="CCMP_CONFIG_NUMBER_HEADLINE_CHARACTERS_DESCRIPTION" />
+        <field name="textLength" type="text" default="" label="CCMP_CONFIG_NUMBER_TEASER_CHARACTERS" description="CCMP_CONFIG_NUMBER_TEASER_CHARACTERS_DESCRIPTION" />
+
+        <field name="showPriceColumn" type="radio" default="1" label="CCMP_CONFIG_SHOW_PRICE_COLUMN" description="CCMP_CONFIG_SHOW_PRICE_COLUMN_DESCRIPTION">
+            <option value="0">CCMP_CONFIG_NO</option>
+            <option value="1">CCMP_CONFIG_YES</option>
+        </field>
+
+        <field name="showLabelColumn" type="radio" default="1" label="CCMP_CONFIG_SHOW_LABEL_COLUMN" description="CCMP_CONFIG_SHOW_LABEL_COLUMN_DESCRIPTION">
+            <option value="0">CCMP_CONFIG_NO</option>
+            <option value="1">CCMP_CONFIG_YES</option>
+        </field>
+
+
+        <field name="showFooter" type="radio" default="1" label="CCMP_CONFIG_SHOW_FOOTER" description="CCMP_CONFIG_SHOW_FOOTER_DESCRIPTION">
+            <option value="0">CCMP_CONFIG_NO</option>
+            <option value="1">CCMP_CONFIG_YES</option>
+        </field>
+
+    </fieldset>
+
+
+
+    <fieldset name="rss" label="CCMP_CONFIG_RSS_SETTINGS">
+
+		<field name="useRssFeeds" type="radio" default="1" label="CCMP_CONFIG_USE_RSS_FEEDS" description="CCMP_CONFIG_USE_RSS_FEEDS_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_NO</option>
+			<option value="1">CCMP_CONFIG_YES</option>
+		</field>
+
+		<field name="showRssFeedIcon" type="radio" default="1" label="CCMP_CONFIG_SHOW_RSS_ICON" description="CCMP_CONFIG_SHOW_RSS_ICON_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_NO</option>
+			<option value="1">CCMP_CONFIG_YES</option>
+		</field>
+
+    	<field name="rssSize" type="text" default="20" label="CCMP_CONFIG_RSS_SIZE" description="CCMP_CONFIG_RSS_SIZE_DESCRIPTION" />
+
+    </fieldset>
+
+
+
+    <fieldset name="globals" label="CCMP_CONFIG_GLOBAL_FIELD_SETTINGS">
+
+		<field name="useFirstname" type="radio" default="1" label="CCMP_CONFIG_USE_FIRSTNAME" description="CCMP_CONFIG_USE_FIRSTNAME_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_NO</option>
+			<option value="1">CCMP_CONFIG_YES</option>
+		</field>
+
+		<field name="useLastname" type="radio" default="1" label="CCMP_CONFIG_USE_LASTNAME" description="CCMP_CONFIG_USE_LASTNAME_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_NO</option>
+			<option value="1">CCMP_CONFIG_YES</option>
+		</field>
+
+		<field name="useCompany" type="radio" default="1" label="CCMP_CONFIG_USE_COMPANY" description="CCMP_CONFIG_USE_COMPANY_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_NO</option>
+			<option value="1">CCMP_CONFIG_YES</option>
+		</field>
+
+		<field name="useStreet" type="radio" default="1" label="CCMP_CONFIG_USE_STREET" description="CCMP_CONFIG_USE_STREET_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_NO</option>
+			<option value="1">CCMP_CONFIG_YES</option>
+		</field>
+
+		<field name="useZip" type="radio" default="1" label="CCMP_CONFIG_USE_ZIPCODE" description="CCMP_CONFIG_USE_ZIPCODE_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_NO</option>
+			<option value="1">CCMP_CONFIG_YES</option>
+		</field>
+
+		<field name="useCity" type="radio" default="1" label="CCMP_CONFIG_USE_CITY" description="CCMP_CONFIG_USE_CITY_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_NO</option>
+			<option value="1">CCMP_CONFIG_YES</option>
+		</field>
+
+		<field name="useState" type="radio" default="1" label="CCMP_CONFIG_USE_STATE" description="CCMP_CONFIG_USE_STATE_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_NO</option>
+			<option value="1">CCMP_CONFIG_YES</option>
+		</field>
+
+		<field name="useCountry" type="radio" default="1" label="CCMP_CONFIG_USE_COUNTRY" description="CCMP_CONFIG_USE_COUNTRY_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_NO</option>
+			<option value="1">CCMP_CONFIG_YES</option>
+		</field>
+
+		<field name="usePhone" type="radio" default="1" label="CCMP_CONFIG_USE_PHONE" description="CCMP_CONFIG_USE_PHONE_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_NO</option>
+			<option value="1">CCMP_CONFIG_YES</option>
+		</field>
+
+		<field name="useMobile" type="radio" default="1" label="CCMP_CONFIG_USE_MOBILE" description="CCMP_CONFIG_USE_MOBILE_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_NO</option>
+			<option value="1">CCMP_CONFIG_YES</option>
+		</field>
+
+		<field name="useEmail" type="radio" default="1" label="CCMP_CONFIG_USE_EMAIL" description="CCMP_CONFIG_USE_EMAIL_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_NO</option>
+			<option value="1">CCMP_CONFIG_YES</option>
+		</field>
+
+		<field name="useWeb" type="radio" default="1" label="CCMP_CONFIG_USE_WEBSITE" description="CCMP_CONFIG_USE_WEBSITE_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_NO</option>
+			<option value="1">CCMP_CONFIG_YES</option>
+		</field>
+
+		<field name="useCondition" type="radio" default="1" label="CCMP_CONFIG_USE_CONDITION" description="CCMP_CONFIG_USE_CONDITION_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_NO</option>
+			<option value="1">CCMP_CONFIG_YES</option>
+		</field>
+
+		<field name="usePrice" type="radio" default="1" label="CCMP_CONFIG_USE_PRICE" description="CCMP_CONFIG_USE_PRICE_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_NO</option>
+			<option value="1">CCMP_CONFIG_YES</option>
+		</field>
+
+    </fieldset>
+
+
+
+    <fieldset name="images" label="CCMP_CONFIG_IMAGE_SETTINGS">
+
+    	<field name="maxImageSize" type="text" default="209715200" label="CCMP_CONFIG_MAX_IMAGE_SIZE" description="CCMP_CONFIG_MAX_IMAGE_SIZE_DESCRIPTION" />
+
+    	<field name="maxBigImageX" type="text" default="800" label="CCMP_CONFIG_MAX_BIG_IMAGE_X" description="CCMP_CONFIG_MAX_BIG_IMAGE_X_DESCRIPTION" />
+    	<field name="maxBigImageY" type="text" default="600" label="CCMP_CONFIG_MAX_BIG_IMAGE_Y" description="CCMP_CONFIG_MAX_BIG_IMAGE_Y_DESCRIPTION" />
+
+    	<field name="maxSmallImageX" type="text" default="128" label="CCMP_CONFIG_MAX_SMALL_IMAGE_X" description="CCMP_CONFIG_MAX_SMALL_IMAGE_X_DESCRIPTION" />
+    	<field name="maxSmallImageY" type="text" default="96"  label="CCMP_CONFIG_MAX_SMALL_IMAGE_Y" description="CCMP_CONFIG_MAX_SMALL_IMAGE_Y_DESCRIPTION" />
+
+		<field name="images" type="list" default="3" label="CCMP_CONFIG_NUMBER_IMAGES" description="CCMP_CONFIG_NUMBER_IMAGES_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_NONE</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</field>
+
+		<field name="imagesDisplayMode" type="list" default="0" label="CCMP_CONFIG_IMAGES_DISPLAY_MODE" description="CCMP_CONFIG_IMAGES_DISPLAY_MODE_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_BROWSER_WINDOW</option>
+			<option value="1">CCMP_CONFIG_SLIMBOX</option>
+			<option value="2">CCMP_CONFIG_ROKBOX</option>
+		</field>
+
+		<field name="includeMootoolsJS" type="radio" default="0" label="CCMP_CONFIG_INCLUDE_MOOTOOLS" description="CCMP_CONFIG_INCLUDE_MOOTOOLS_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_NO</option>
+			<option value="1">CCMP_CONFIG_YES</option>
+		</field>
+
+		<field name="includeSlimboxJS" type="radio" default="0" label="CCMP_CONFIG_INCLUDE_SLIMBOX" description="CCMP_CONFIG_INCLUDE_SLIMBOX_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_NO</option>
+			<option value="1">CCMP_CONFIG_YES</option>
+		</field>
+
+    </fieldset>
+
+
+
+    <fieldset name="boxes" label="CCMP_CONFIG_HTML_BOXES">
+
+    	<field name="htmlBoxIndexTop" type="textarea" default="" label="CCMP_CONFIG_HTML_INDEX_TOP" description="CCMP_CONFIG_HTML_INDEX_TOP_DESCRIPTION" rows="8" cols="50" />
+    	<field name="htmlBoxIndexBottom" type="textarea" default="" label="CCMP_CONFIG_HTML_INDEX_BOTTOM" description="CCMP_CONFIG_HTML_INDEX_BOTTOM_DESCRIPTION" rows="8" cols="50" />
+
+    	<field name="htmlBoxCategoryTop" type="textarea" default="" label="CCMP_CONFIG_HTML_CATEGORY_TOP" description="CCMP_CONFIG_HTML_CATEGORY_TOP_DESCRIPTION" rows="8" cols="50" />
+    	<field name="htmlBoxCategoryBottom" type="textarea" default="" label="CCMP_CONFIG_HTML_CATEGORY_BOTTOM" description="CCMP_CONFIG_HTML_CATEGORY_BOTTOM_DESCRIPTION" rows="8" cols="50" />
+
+    	<field name="htmlBoxEntryTop" type="textarea" default="" label="CCMP_CONFIG_HTML_ENTRY_TOP" description="CCMP_CONFIG_HTML_ENTRY_TOP_DESCRIPTION" rows="8" cols="50" />
+    	<field name="htmlBoxEntryBottom" type="textarea" default="" label="CCMP_CONFIG_HTML_ENTRY_BOTTOM" description="CCMP_CONFIG_HTML_ENTRY_BOTTOM_DESCRIPTION" rows="8" cols="50" />
+
+    </fieldset>
+
+
+    <fieldset name="extensions" label="CCMP_CONFIG_SUPPORT_EXTENSIONS">
+
+        <field name="useDiscussionsAvatars" type="radio" default="0" label="CCMP_CONFIG_USE_DISCUSSIONS_AVATARS" description="CCMP_CONFIG_USE_DISCUSSIONS_AVATARS_DESCRIPTION">
+            <option value="0">CCMP_CONFIG_NO</option>
+            <option value="1">CCMP_CONFIG_YES</option>
+        </field>
+
+        <field name="useDiscussionsMessages" type="radio" default="0" label="CCMP_CONFIG_USE_DISCUSSIONS_MESSAGES" description="CCMP_CONFIG_USE_DISCUSSIONS_MESSAGES_DESCRIPTION">
+            <option value="0">CCMP_CONFIG_NO</option>
+            <option value="1">CCMP_CONFIG_YES</option>
+        </field>
+
+		<field name="usePrimezilla" type="radio" default="0" label="CCMP_CONFIG_USE_PRIMEZILLA" description="CCMP_CONFIG_USE_PRIMEZILLA_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_NO</option>
+			<option value="1">CCMP_CONFIG_YES</option>
+		</field>
+
+		<field name="callPrimezillaMode" type="list" default="0" label="CCMP_CONFIG_PRIMEZILLA_MODE" description="CCMP_CONFIG_PRIMEZILLA_MODE_DESCRIPTION">
+			<option value="0">CCMP_CONFIG_USERNAME</option>
+			<option value="1">CCMP_CONFIG_USERID</option>
+		</field>
+
+    </fieldset>
+
+
+    <fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+        <field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL" filter="rules" component="com_ccmarketplace" section="component">
+            <action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+            <action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+        </field>
+    </fieldset>
+
+</config>
+

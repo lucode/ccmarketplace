@@ -1,0 +1,24 @@
+
+
+
+#mpFooter {
+	margin: 30px 0px 10px 0px;
+	text-align: center;
+}
+#mpFooterVersion {
+	/* font-size: 0.9em; 
+	color: #555; */
+}
+#mpFooterCopyright {
+	/* font-size: 0.9em;
+	color: #555; */
+}
+
+.icon-48-marketplace
+{
+    background-image: url('../images/system/icon-48-marketplace.png');
+}
+
+#custom_fields img {
+	float:none;
+}

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="CCMP_VIEW2" option="CCMP_VIEW2">
+		<message>
+			<![CDATA[CCMP_VIEW2]]>
+		</message>
+	</layout>
+
+	<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request"
+			addfieldpath="/administrator/components/com_ccmarketplace/models/fields">
+
+			<field name="id" type="modal_webchannels"
+				label="CCMP_WEBCHANNELS_LABEL"
+				required="true"
+				description="CCMP_WEBCHANNELS_DESC"
+			/>
+		</fieldset>
+	</fields>
+
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+
+		<!-- Basic options. -->
+		<fieldset name="basic"
+			label="CCMP_WEBCHANNEL_PARAMS_LABEL">
+
+		<field
+			name="show_image"
+			type="radio"
+			label="CCMP_SHOWIMAGE_LABEL"
+			description="CCMP_SHOWIMAGE_DESC"
+			default="1">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field
+			name="ad_per_page"
+			type="text"
+			default="5"
+			label="CCMP_AD_PER_PAGE_LABEL"
+			description="CCMP_AD_PER_PAGE_DESC" />
+
+		<field
+			name="pay_option"
+			type="list"
+			label="CCMP_PAY_OPTION_LABEL"
+			description="CCMP_PAY_OPTION_DESC"
+			default="2">
+			<option value="0">Hidden</option>
+			<option value="1">Pay</option>
+			<option value="2">Redirect to Cyclos</option>
+		</field>
+
+		<field
+			name="show_memberfields"
+			type="radio"
+			label="CCMP_SHOW_MEMBERFI_LABEL"
+			description="CCMP_SHOW_MEMBERFI_DESC"
+			default="0">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+<!--   <field
+			name="show_memberfi-r1"
+			type="radio"
+			label="CCMP_SHOW_MEMBERFIR1_LABEL"
+			description="CCMP_SHOW_MEMBERFIR1_DESC"
+			default="0">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>-->
+
+		<field
+			name="show_category"
+			type="radio"
+			label="CCMP_SHOW_CATEGORY_LABEL"
+			description="CCMP_SHOW_CATEGORY_DESC"
+			default="0">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field
+			name="show_organisation"
+			type="radio"
+			label="CCMP_SHOW_ORGANISATION_LABEL"
+			description="CCMP_SHOW_ORGANISATION_DESC"
+			default="0">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field
+			name="show_tradetype"
+			type="radio"
+			label="CCMP_SHOW_TRADE_TYPE_LABEL"
+			description="CCMP_SHOW_TRADE_TYPE_DESC"
+			default="0">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field
+			name="show_adstype"
+			type="radio"
+			label="CCMP_SHOW_ADS_TYPE_LABEL"
+			description="CCMP_SHOW_ADS_TYPE_DESC"
+			default="0">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+    
+        <field
+			name="show_pdf_button"
+			type="radio"
+			label="CCMP_SHOW_PDF_BUTTON_LABEL"
+			description="CCMP_SHOW_PDF_BUTTON_DESC"
+			default="0">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		</fieldset>
+	</fields>
+</metadata>

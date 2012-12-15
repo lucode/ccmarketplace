@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.0"
+	client="site"
+	method="upgrade">
+	<name>CC-Marketplace Random Ads</name>
+	<author>CC-Hub, Jextn</author>
+	<creationDate>Nov. 26. 2012</creationDate>
+	<copyright>Copyright (C) 2005 - 2012 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>development@cc-hub.org</authorEmail>
+	<authorUrl>http://www.cc-hub.org; http://www.jextn.com</authorUrl>
+	<version>1.0</version>
+	<description>Retrive ads from cyclos via CC-Marketplace Component and display the ads random.</description>
+	<files>
+		<filename module="mod_ccmp_randomads">mod_ccmp_randomads.php</filename>
+		<folder>assets</folder>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>mod_ccmp_randomads.xml</filename>
+        <filename>randomads.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_ccmp_randomads.ini</language>
+		<language tag="en-GB">en-GB.mod_ccmp_randomads.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="webcannel" label="CCMP_WEBCHANNELS_PARAMS_LABEL"
+			addfieldpath="/administrator/components/com_ccmarketplace/models/fields">
+				<field name="id" type="modal_webchannels"
+					label="CCMP_WEBCHANNELS_LABEL"
+					required="true"
+					description="CCMP_WEBCHANNELS_DESC"
+				/>
+			</fieldset>
+
+			<fieldset name="basic">
+				<field
+					name="show_image"
+					type="radio"
+					label="CCMP_SHOWIMAGE_LABEL"
+					description="CCMP_SHOWIMAGE_DESC"
+					default="1">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+
+				<field
+					name="ad_per_page"
+					type="text"
+					default="5"
+					label="CCMP_AD_PER_PAGE_LABEL"
+					description="CCMP_AD_PER_PAGE_DESC" />
+
+				<field
+					name="pay_option"
+					type="list"
+					label="CCMP_PAY_OPTION_LABEL"
+					description="CCMP_PAY_OPTION_DESC"
+					default="2">
+					<option value="0">Hidden</option>
+					<option value="1">Pay</option>
+					<option value="2">Redirect to Cyclos</option>
+				</field>
+
+				<field
+					name="ad_width"
+					type="text"
+					default="167px"
+					label="CCMP_AD_WIDTH_LABEL"
+					description="CCMP_AD_WIDTH_DESC" />
+
+				<field
+					name="ad_height"
+					type="text"
+					default="180px"
+					label="CCMP_AD_HEIGHT_LABEL"
+					description="CCMP_AD_HEIGHT_DESC" />
+
+				<field
+					name="view"
+					type="list"
+					label="CCMP_VIEW_LABEL"
+					description="CCMP_VIEW_DESC"
+					default="vertical">
+					<option value="horizontal">Horizontal</option>
+					<option value="vertical">Vertical</option>
+				</field>
+
+				<field
+					name="itoshow"
+					type="list"
+					label="CCMP_ITEM_SHOW_LABEL"
+					description="CCMP_ITEM_SHOW_DESC"
+					default="3">
+					<option value="1">Images</option>
+					<option value="2">Text</option>
+					<option value="3">Both</option>
+				</field>
+
+				<field
+					name="seconds"
+					type="text"
+					default="5"
+					label="CCMP_SECONDS_LABEL"
+					description="CCMP_SECONDS_DESC" />
+
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

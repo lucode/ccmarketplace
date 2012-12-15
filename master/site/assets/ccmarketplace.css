@@ -1,0 +1,1274 @@
+/**
+ * ccmarketplace.css
+ *
+ * The Stylesheet for the CC-Marketplace Classified Ads component
+ *
+ *
+ * @package com_ccmarketplace
+ * @subpackage frontend
+ *
+ * @copyright 2012 CC-Hub Org
+ * @author Lucas Huber
+ * @date 12-12-10
+ *
+ * This file is part of CC-Marketplace.
+ *
+ * Marketplace is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * Marketplace is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Marketplace; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+ */
+
+
+br {
+	clear: left;
+}
+
+
+h2 {
+    margin-top:    5px;
+    margin-bottom: 5px;
+}
+
+
+.codingfish table {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+.codingfish tr {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+.codingfish td {
+/*	border: 0px; */
+/*	margin: 0px; */
+/*	padding: 0px; */
+}
+
+.noborder {
+	border: 0px;
+/*	margin: 0px; */
+/*	padding: 0px; */
+}
+
+.cofiContainer {
+	border-top: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+	border-left: 0px;
+}
+
+#mpContainer {
+	/* border: 1px solid green; */
+}
+
+
+#mpContentTopmenu {
+	/* border: 1px solid red; */
+}
+
+#mpContentIndex {
+	/* border: 1px solid blue; */
+	/* background: white; */
+}
+
+#mpContentFooter {
+	/* border: 1px solid yellow; */
+}
+
+#mpTopmenu {
+	margin: 0px 0px 20px 0px;
+	text-align: center;
+}
+
+/*
+#mpFooter {
+	margin: 20px 0px 10px 0px;
+	text-align: center;
+}
+#mpFooterVersion {
+	font-size: 0.8em;
+	color: #999999;
+}
+#mpFooterCopyright {
+	font-size: 0.8em;
+	color: #999999;
+}
+*/
+
+/* index page settings */
+.cofiIndexTable {
+}
+
+.cofiThreadTableRow1 {
+	background-color: #fafafa;
+    padding: 10px;
+}
+
+.cofiThreadTableRow2 {
+	background-color: #fcfcfc;
+    padding: 10px;
+}
+
+.cofiIndexTableRow1 {
+	background-color: #fafafa;
+    /* padding: 2px; */
+    padding: 10px;
+}
+
+.cofiIndexTableRow2 {
+	background-color: #fcfcfc;
+    /* padding: 2px; */
+    padding: 10px;
+}
+
+.cofiIndexTableRowRepliesCounter {
+	text-align: center;
+	font-size: 2.5em;
+	margin-bottom: 10px;
+}
+.cofiIndexTableRowRepliesText {
+	text-align: center;
+}
+
+.cofiIndexTableRowReplies {
+	color: #777777;
+	border-top:    1px solid #f5f5f5;
+	border-right:  1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	border-left:   1px solid #dddddd;
+}
+.cofiIndexTableRowIcon {
+	border-top:    1px solid #f5f5f5;
+	border-right:  1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	border-left:   1px solid #f5f5f5;
+}
+.cofiIndexTableRowTopic {
+    padding-left:  10px;
+    padding-right: 10px;
+	border-top:    1px solid #f5f5f5;
+	border-right:  1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	border-left:   1px solid #f5f5f5;
+}
+
+/*
+.cofiIndexTableRowTopic a {
+    font-size: 1.2em;
+}
+*/
+
+.cofiIndexTableRowHeadlineTitle {
+    width: 100%;
+    margin: 5px 10px 0px 10px;
+    padding:0px 0px 0px 0px;
+}
+.cofiIndexTableRowHeadlineSubtitle {
+    width: 100%;
+    margin: 2px 10px 0px 10px;
+	color: #555555;
+    font-size: 0.9em;
+}
+
+.cofiIndexTableRowTeaserText {
+    width: 100%;
+    margin: 5px 10px 0px 10px;
+	color: #000000;
+}
+
+
+.cofiIndexTableRowLastPost {
+	border-top:    1px solid #f5f5f5;
+	border-right:  1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	border-left:   1px solid #f5f5f5;
+}
+
+.cofiIndexTableRowSticky {
+	border-top:    1px solid #f5f5f5;
+	border-right:  1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	border-left:   1px solid #f5f5f5;
+}
+
+/* Index View */
+.cofiIndexViewTableRowCategoryImage {
+	color: #777777;
+	border-top:    1px solid #f5f5f5;
+	border-right:  1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	border-left:   1px solid #dddddd;
+}
+.cofiIndexViewTableRowCategoryName {
+    padding-left:  10px;
+    padding-right: 10px;
+	border-top:    1px solid #f5f5f5;
+	border-right:  1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	border-left:   1px solid #f5f5f5;
+}
+.cofiIndexViewTableRowThreads {
+    padding-left:  10px;
+    padding-right: 10px;
+	border-top:    1px solid #f5f5f5;
+	border-right:  1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	border-left:   1px solid #f5f5f5;
+}
+.cofiIndexViewTableRowPosts {
+    padding-left:  10px;
+    padding-right: 10px;
+	border-top:    1px solid #f5f5f5;
+	border-right:  1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	border-left:   1px solid #f5f5f5;
+}
+.cofiIndexViewTableRowLastEntry {
+    padding-left:  10px;
+    padding-right: 10px;
+	border-top:    1px solid #f5f5f5;
+	border-right:  1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	border-left:   1px solid #f5f5f5;
+}
+/* Index View */
+
+
+
+
+/* Entry */
+.cofiEntryContent {
+	width: 100%;
+	border: 1px solid #AAAAAA;
+	margin: 20px 0px 30px 0px;
+	/* padding: 10px; */
+}
+
+.cofiEntryContentHeadline {
+	/* width: 100%; */
+    background: #EEEEEE;
+	border-bottom: 1px solid #AAAAAA;
+	padding: 10px;
+	/* font-weight: bold; */
+}
+.cofiEntryContentHeadline1 {
+	float: left;
+	width: 75%;
+    vertical-align: top;
+	font-size: 1.5em;
+    padding: 2px 0px 0px 0px;
+}
+
+.cofiEntryContentHeadline2 {
+	float: left;
+	/* width: 20%; */
+	text-align: right;
+    padding: 0px 0px 0px 10px;
+}
+
+
+
+.cofiEntryContentText {
+	background: #FFFFFF;
+	padding: 10px;
+}
+.cofiEntryContentText1 {
+	float: left;
+	width: 60%;
+	/* height: 200px; */
+	border-right: 1px solid #CCCCCC;
+}
+.cofiEntryContentText2 {
+	float: left;
+	width: 35%;
+	padding: 0px 0px 0px 30px;
+/*	text-align: right; */
+}
+
+
+
+
+.cofiEntryContentImage {
+	background: #FFFFFF;
+	padding: 2px;
+	border: 1px solid #DDDDDD;
+	margin: 5px 10px 5px 10px;
+}
+
+
+
+
+.cofiEntryContentContact {
+	background: #FFFFFF;
+	border-top: 1px solid #CCCCCC;
+	padding: 10px;
+}
+
+.cofiEntryContentActions {
+	background: #FFFFFF;
+	border-top: 1px solid #CCCCCC;
+	padding: 10px;
+}
+
+
+
+
+
+.cofiEntryHeader {
+	font-size: 1.2em;
+	font-weight: bold;
+    margin-top: 20px;
+}
+.cofiEntryFooter {
+	font-size: 1.0em;
+	font-weight: normal;
+	color: #777;
+    margin-top: 5px;
+}
+
+
+
+.cofiFirstname {
+	font-size: 1.4em;
+	font-weight: bold;
+    margin-top: 10px;
+}
+
+.cofiLastname {
+	font-size: 1.4em;
+	font-weight: bold;
+    margin-top: 10px;
+}
+
+.cofiStreet {
+	font-size: 1.4em;
+	font-weight: bold;
+    margin-top: 10px;
+}
+
+.cofiZip {
+	font-size: 1.4em;
+	font-weight: bold;
+    margin-top: 10px;
+}
+
+.cofiCity {
+	font-size: 1.4em;
+	font-weight: bold;
+    margin-top: 10px;
+}
+
+.cofiState {
+	font-size: 1.4em;
+	font-weight: bold;
+    margin-top: 10px;
+}
+
+.cofiCountry {
+	font-size: 1.4em;
+	font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.cofiType {
+	font-size: 1.4em;
+	font-weight: bold;
+    margin-top: 10px;
+}
+
+.cofiCategory {
+	font-size: 1.4em;
+	font-weight: bold;
+    margin-top: 10px;
+}
+
+.cofiHeadline {
+	font-size: 1.4em;
+	font-weight: bold;
+    margin-top: 10px;
+}
+
+.cofiText {
+	font-size: 1.4em;
+	font-weight: bold;
+    margin-top: 10px;
+}
+
+.cofiCondition {
+	font-size: 1.4em;
+	font-weight: bold;
+    margin-top: 10px;
+}
+
+.cofiPrice {
+	font-size: 1.4em;
+	font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+
+.cofiButton {
+    margin-top: 10px;
+}
+
+/* Entry */
+
+
+/* Top Entries */
+.cofiTopEntries1 {
+	font-size: 0.9em;
+    margin-top: 10px;
+}
+.cofiTopEntries2 {
+	font-size: 0.9em;
+    margin-bottom: 15px;
+}
+/* Top Entries */
+
+
+/* Entry Description Row */
+.cofiEntryInfoRow {
+    margin: 0px 0px 30px 0px;
+}
+
+.cofiEntryUsername {
+    float: left;
+	width: 80px;
+	text-align: center;
+	font-weight: bold;
+    margin: 0px 0px 0px 0px;
+    padding: 3px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+}
+.cofiEntryLabel {
+    float: left;
+	width: 80px;
+	text-align: center;
+	font-weight: bold;
+    margin: 0px 0px 0px 10px;
+    padding: 3px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+}
+.cofiEntryPrivateCommercial {
+    float: left;
+	width: 80px;
+	text-align: center;
+	font-weight: bold;
+    margin: 0px 0px 0px 10px;
+    padding: 3px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+}
+
+/* Entry Description Row */
+
+
+
+.cofiStateActive {
+	font-weight: bold;
+    color: #00641A;
+    margin: 0px 5px 0px 5px;
+}
+.cofiStateExpired {
+	font-weight: bold;
+    color: #BC0000;
+    margin: 0px 5px 0px 5px;
+}
+.cofiStateDeactivated {
+	font-weight: bold;
+    color: #FF7D00;
+    margin: 0px 5px 0px 5px;
+}
+
+
+/* Profile */
+.cofiProfileContent {
+    margin: 10px;
+    padding: 10px;
+	border: 1px solid #ddd;
+}
+
+.cofiProfileUsername {
+	float: left;
+    margin-top: 10px;
+    margin-left: 5px;
+	font-size: 2em;
+	font-weight: bold;
+}
+.cofiProfileName {
+    margin-top: 12px;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.cofiProfileHeader {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+
+.cofiProfileLocationBox {
+    margin-bottom: 20px;
+    padding: 0px;
+    background: #e0e0e0;
+    border: 1px solid #dddddd;
+}
+.cofiProfileLocationHeader {
+    margin: 0px 0px 1px 0px;
+    padding: 5px;
+/*    background: #d5d5d5; */
+    background: #f0f0f0;
+}
+.cofiProfileLocationRow {
+    margin: 0px 0px 1px 0px;
+    padding: 5px;
+/*    background: #eeeeee; */
+    background: #f7f7f7;
+}
+.cofiProfileLocationLabel {
+	float: left;
+	width:100px;
+	text-align: left;
+	font-weight: bold;
+}
+.cofiProfileLocationValue {
+	font-weight: normal;
+}
+/* Profile */
+
+
+/* Tables */
+.cofiTableHeader {
+	background: #EEEEEE;
+	padding: 5px 0px 5px 0px;
+	font-weight: bold;
+}
+/* Tables */
+
+
+/* Footer */
+.cofiFooter {
+	margin: 20px 10px 0px 0px;
+    color: #999;
+    font-size: 10px;
+    text-align: right;
+}
+#cofiFooterLeft {
+    text-align: right;
+}
+#cofiFooterRight {
+    margin: 0px 0px 0px 2px;
+}
+
+#cofiFooterLinkCF {
+    color: #999;
+    font-size: 10px;
+    text-decoration: none;
+}
+#cofiFooterLinkMP {
+    color: #999;
+    font-size: 10px;
+    text-decoration: none;
+}
+/* Footer */
+
+
+/* Avatar */
+.cofiAvatarBox {
+	width:32px;
+	height:32px;
+	text-align: center;
+	background: white;
+	margin: 5px;
+	padding: 2px;
+	border: 1px solid #ddd;
+}
+/* Avatar */
+
+
+/*View 3 : START*/
+.list{
+  width:100%;
+  /*height:165px;*/
+  cursor:pointer;
+  font-family: "Lucida Sans Unicode";
+   height: 100%;
+}
+.contmain {
+    position:relative;
+    padding-bottom:0px;
+    width:547px;
+	margin:0 auto;
+}
+*:first-child+html .subcategorias{ /*ie7 only*/
+    padding:0px;
+    margin:0px;
+    display:inline;
+    clear:both;
+
+}
+.subcategorias span{
+    padding-left:5px;
+}
+.subcategorias ul{
+    float:left;
+}
+.subcategorias li{
+    list-style:none;
+    margin:auto 5px;
+    width:230px;
+}
+.subcategorias li a {
+   text-decoration:none;
+}
+
+.subcategorias li a:hover {
+    text-decoration:underline;
+}
+
+.contmain a:link {color: #606060}
+.contmain a:visited {color: #606060}
+.contmain a:hover {color:#000000;}
+
+.contenedor:hover {
+    border:1px solid blue;
+    /*background-color:#E5EFF8;*/
+
+}
+.contenedor {
+    color:#0e5e82;
+    margin:4px;
+    float:left;
+    border:1px solid #115083;
+    padding:0;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.contenedor .list tr,.contenedor .list td {
+	border:none;
+}
+
+.imagen {
+    margin-left:auto;
+    margin-right:auto;
+    vertical-align:middle;
+    height:110px;
+    text-align:center;
+}
+
+.text , .text tr, .text td {
+    width:130px;
+    margin:0;
+    padding:0;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.price, .price tr, .price td{
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+/* BEGIN ccmarketplace  */
+.ccmarketplace_pag{
+	text-align:center;
+	color:red;
+	font-weight:bold;
+	font-family:arial;
+	font-size:12px;
+	padding: 5px;
+	margin-top:5px;
+}
+
+/* With of ccmarketplace view 1-3 */
+#ccmarketplace_search {
+	width: 100%;
+}
+
+#ccmarketplace_search select,#ccmarketplace_search input {
+	/*padding:5px;*/
+	font-family: "Lucida Sans Unicode";
+}
+
+#ccmarketplace_search option {
+	/*padding-left:5px;*/
+	font-family: "Lucida Sans Unicode";
+}
+
+#ccmarketplace_search select {
+	/*width:40%;
+	margin-right: 0.5%;*/
+}
+
+/*#ccmarketplace_search #keywords {
+	width:40%;
+	margin-right: 0.5%;
+}*/
+
+#ccmarketplace_search .button {
+	width: 75px;
+	margin-top: 2px; 
+	font-weight:bold;
+	font-size:13px;
+/*    text-transform: capitalize;   */
+	text-align: center;
+}
+
+.ccmarketplace_subcategories {
+	width: 100%;
+    margin-top: 9px;
+}
+
+.ccmarketplace_subcategories  tr td{
+	padding:5px 5px 5px 30px;
+    text-align: left;
+    width: 50%;
+}
+
+.ccmarketplace_subcategories  tr,.ccmarketplace_subcategories  td {
+	border: 1px solid #0A246A;
+}
+
+p#ccmarketplace_noads {
+	background: none repeat scroll 0 0 #F3F2EE;
+    color: #133646;
+    margin: 5px 0 0;
+    padding: 5px;
+    text-align: center;
+}
+
+.ccads_views_div {
+	padding : 5px;
+	font-family: "Lucida Sans Unicode";
+}
+
+.ccads_views_div a#ccmarketplace_back,.ccads_views_div a#ccmarketplace_back:hover{
+	background: #095197 !important;
+    color: #FFFFFF !important;
+    line-height: 40px;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+.view2_contmain table {
+	width : 100%;
+	background:#FAFAFA;
+}
+
+
+.view2_contenedor a{
+	background: none !important;
+    color: #095197 !important;
+    line-height: 40px;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+.view2_contmain a {
+	background: none !important;
+    color: #095197 !important;
+    text-decoration: none;
+}
+
+.ccads_views_div a:focus,.ccads_views_div a:hover,
+.view2_contenedor a:focus,.view2_contenedor a:hover,
+.view2_contmain a:focus,.view2_contmain a:hover
+{
+	background:none !important;
+	color: #095197 !important;
+}
+
+/*Detail View*/
+#ccmarketplace_dview3_outer {
+	width : 100%;
+}
+
+#ccmarketplace_dview3_inner_left , #ccmarketplace_dview3_inner_right{
+	float : left;
+/*  width : 236px;*/
+}
+
+#ccmarketplace_dview3_inner_left {
+	width : 285px;
+}
+
+#ccmarketplace_dview3_inner_right {
+	width : 436px;
+}
+
+#ccmarketplace_dview3_ir_no_image {
+	margin:10px;
+}
+
+#ccmarketplace_dview3_inner_right td#ccmp_title,#ccmarketplace_dview3_ir_no_image td#ccmp_title {
+	background : #2BB0E5;
+	color:#FFFFFF;
+	padding: 1px 10px;
+    width: 115px;
+	text-transform: capitalize;
+}
+
+#detail_image_thumb img {
+	cursor:pointer;
+}
+
+#ccmarketplace_dview3_inner_right table {
+	margin: 15px 0 0;
+	border-collapse: separate;
+	width:100%;
+  max-width: 350px;
+}
+
+#ccmarketplace_dview3_ir_no_image table {
+	margin: 0 !important;
+	border-collapse: separate;
+	width:100%;
+}
+
+
+#ccmarketplace_dview3_inner_left table {
+	text-align : center;
+	vertical-align : middle;
+	background: #FFFFFF;
+	border : 1px solid #DADADA;
+	margin: 15px 0 15px 8px;
+}
+
+#ccmarketplace_dview3_back {
+	width : 100%;
+	text-align : right;
+	padding:5px 0px;
+}
+
+#ccmarketplace_dview3_title {
+	width : 100%;
+	text-align : center;
+}
+
+#ccmarketplace_dview3_outer table {
+	height: 350px;
+}
+
+#ccmp_pay {
+	height:30px;
+	text-align:right;
+}
+
+#ccmp_other {
+	height:40px;
+}
+
+#ccmp_pay input {
+	border:none;
+	background:url('images/pay.jpg') repeat-x;
+	padding:5px 15px;
+	color:#FFFFFF;
+	height:25px;
+	width:65px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+#ccmarketplace_dview3_back input {
+	border:none;
+	background:url('images/back.jpg') repeat-x;
+	padding:5px 15px;
+	color:#FFFFFF;
+	height:25px;
+	width:65px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+/*Ad Detail View Descripton*/
+#ccmp_desc {
+	vertical-align : top;
+}
+
+#ccmp_desc td{
+	padding:10px 7px 5px;
+  max-width: 350px; 
+}
+
+#ccmarketplace_dview3_outer tr,#ccmarketplace_dview3_outer tr td {
+	border:none;
+  max-width: 500px;
+}
+
+#ccmarketplace_dview3_image {
+	padding: 15px;
+}
+
+#ccmarketplace_dview3_inner {
+	background : #E4E4E4;
+	border:1px solid #DADADA;
+}
+
+#ccmp_data {
+	background : #FFFFFF;
+	border: 1px solid #DADADA !important;
+    padding: 0 10px;
+}
+
+#ccmarketplace_dview3_title {
+	color:#2BABBC;
+	font-size:20px;
+	padding:5px 0px;
+}
+
+#ccmarketplace_dview3_inner a:focus,#ccmarketplace_dview3_inner a:hover {
+	background:none !important;
+	color: #095197 !important;
+}
+
+#ccmarketplace_dview3_inner a {
+	text-decoration:none;
+	color: #095197;
+	cursor:pointer;
+}
+
+.member_details_view table {
+	margin-bottom:15px !important;
+}
+
+/*View 3 : END*/
+/* View 2 : START */
+#ccmp_view2_title {
+	cursor: pointer;
+}
+
+#ccmp_view2_center{
+	text-align:center;
+	vertical-align:middle;
+}
+
+table.view2 {
+	width:100%;
+	margin-top:10px;
+}
+
+table.view2 tr,table.view2 td{
+	border:none;
+}
+
+table.view2 tr.row0 td{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+table.view2 tr.row1 td {
+    background: none repeat scroll 0 0 #F0F0F0;
+    border-top: 1px solid #FFFFFF;
+}
+
+table.view2 th{
+	text-align:center;
+	vertical-align:middle;
+	height:30px;
+	background: none repeat scroll 0 0 #F7F7F7;
+    border-bottom: 1px solid #CCCCCC;
+    border-left: 1px solid #FFFFFF;
+}
+
+table.view2 td{
+	vertical-align:middle;
+	padding:1px 0px;
+}
+
+table.view2 td img{
+	 padding: 1px;
+}
+
+table#ccmarketplace_dview3_ir_no_image {
+	width:100%;
+}
+/* View 2 : END */
+
+/* View 1 : START */
+#ccmp_view1_title {
+/*	background-image:	linear-gradient(bottom,         #b0b0b0 0%, #c0c0c0 100%);
+	background-image:	-o-linear-gradient(bottom,      #b0b0b0 0%, #c0c0c0 100%);
+	background-image:	-moz-linear-gradient(bottom,    #b0b0b0 0%, #c0c0c0 100%);
+	background-image:	-webkit-linear-gradient(bottom, #b0b0b0 0%, #c0c0c0 100%);
+	background-image:	-ms-linear-gradient(bottom,     #b0b0b0 0%, #c0c0c0 100%);
+	background-image:	-webkit-gradient(linear, bottom, top, color-stop(0%, #b0b0b0), color-stop(100%, #c8c8c8));*/
+	background-color:	#eeeeee;
+	border:1px solid #808080; /*#98AC9B;*/
+	border-radius:2x;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+
+table.view1 {
+	margin:10px 0px;
+}
+
+table.view1 tr td {
+	padding:5px;
+}
+
+table.view1_inner tr td {
+	padding:3px;
+	align:top
+}
+
+table.view1 tr,table.view1 td {
+	border:1px solid #000000;
+}
+
+table.view1_inner tr,table.view1_inner td {
+	border:none;
+}
+/* View 1 : END */
+
+
+
+/* Member : START */
+.member_thumb {
+	cursor: pointer;
+	border-top:1px solid #DDDDDD;
+	width : 30%;
+}
+
+#member_user_link {
+	color: #095197;
+    cursor: pointer;
+	line-height: 25px;
+}
+
+#member_spantext {
+	line-height: 25px;
+	font-size:13px;
+	font-weight: bold;
+}
+
+.memberlistTable {
+	width : 100%;
+	margin-top: 10px;
+}
+
+.memberlistTable td {
+	padding : 5px 0px;
+}
+
+#member_righttext {
+	padding : 5px;
+	width : 70%;
+}
+
+.memberlistTable  tr.member_evenRow {
+	background : #E4F6FC;
+}
+
+.memberlistTable  tr.member_oddRow {
+	background : #FEFEFE;
+}
+
+.ccmarketplace_member #ccmarketplace_search {
+	text-align : right;
+}
+/* Member : END */
+
+/* Pagination */
+#cyclos_pagination {
+	list-style:none;
+}
+
+#cyclos_pagination li {
+	display: inline;
+}
+
+#cyclos_pagination li a.ccmp_pag_inactive{
+	background: #BABABA;
+	border: 1px solid #828282;
+	margin: 0 3px;
+	padding:3px 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius: 5px;
+	color:#000000;
+}
+
+#cyclos_pagination li a.ccmp_pag_active{
+	background: #F3F3F3;
+	border: 1px solid #828282;
+	margin: 0 3px;
+	padding:3px 5px;
+	color:#FF0000;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius: 5px;
+}
+
+#cyclos_pagination li a,#cyclos_pagination li a:hover{
+	text-decoration: none;
+}
+
+#mem_d_v {
+	font-size : 10px;
+}
+
+table#ccmarketplace_vsearch tr,table#ccmarketplace_vsearch td,table#mail td,table#mail tr{
+	text-align: left; 	
+	border:none;
+}
+
+table#ccmarketplace_vsearch td{
+	padding : 0px 0px;
+}
+table#ccmarketplace_vsearch,table#ccmarketplace_vsearch td input {
+	width : 71%;
+}
+table#ccmarketplace_vsearch td select{
+	width : 72%;
+}
+#ccmarketplace_search table {
+	width : 100%;
+}
+
+#adFields select {
+	width : 50px;
+}
+
+/* Member search fields table */
+table#memberFields,table#memberFields tr{
+	/*border:none;*/
+	text-align: right; 
+	width: 100%; 
+	border:none;
+  text-align: right; 
+}
+/* Max 16% with 3 items */
+table#memberFields td{
+	width : 16%;
+  text-align: right;
+}
+table#memberFields td select{
+	width : 99%;
+  text-align: right;
+}
+/*#keywords_view2 {
+	padding: 5px 0 !important;
+}*/
+.send_mail:hover  {
+	background:url('images/email_hover.gif') no-repeat !important;
+}
+
+.send_mail,.send_mail:hover  {
+	background:url('images/email.gif') no-repeat;
+	width:15px;
+	height:13px;
+	cursor:pointer;
+	margin: 3px 0 0 9px;
+}
+
+.mem_send_mail:hover  {
+	background:url('images/email_hover.png') no-repeat !important;
+}
+
+.mem_send_mail,.mem_send_mail:hover  {
+	background:url('images/email.png') no-repeat;
+	cursor:pointer;
+	height: 27px;
+    margin: 2px 5px 0 0;
+    width: 40px;
+}
+
+#mail_date div{
+	float:left;
+}
+
+select.organisation {
+	width : 200px;
+}
+
+table#mail {
+	width : 100%;
+}
+
+table#mail td,table#mail td input,table#mail td textarea {
+	padding : 5px;
+	font-family: "Lucida Sans Unicode";
+	float:right; 
+	width: 350px;
+}
+
+table#mail tr#field td {
+	padding-left : 15px;
+}
+
+table#mail td textarea {
+	height: 100px;
+	width: 350px;
+}
+
+table#mail td input#mailsubject {
+	background : #F0F0F0;
+	font-style: italic;
+	border:1px solid silver;
+}
+
+.default_member,.default_member div {
+	float:right;
+}
+
+.default_member .send_mail {
+	margin-right: 6px;
+    margin-top: 6px;
+}
+
+#img_div {
+	min-height : 100px;
+}
+
+#max_div {
+	max-height : 155px;
+	overflow:hidden;
+}
+
+#view2_img {
+	height : 80px;
+	width : 80px;
+	text-align: center;
+}
+
+.default_member input {
+	background: url("images/back-circle.png") no-repeat !important;
+        height: 32px !important;
+        width: 32px !important;
+}
+
+#view3_contmain {
+	margin: 0px !important;
+        padding: 0px !important;
+        position: relative !important;
+        width: 100% !important;
+	float:left !important;
+}
+
+a#filter_os:hover{
+	text-decoration : underline;
+}

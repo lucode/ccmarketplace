@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!--
+ * @package		CCMarketplace
+ * @subpackage	mod_ccmp_cycloscategories
+ * @version		0.8
+ * @copyright	Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ *              Based on the CyclosCategories Modul from www.cyclos.org
+-->
+<extension
+	type="module"
+	version="0.8 beta"
+	client="site">
+	<name>CC-Marketplace Cyclos Categories</name>
+	<author>CC-Hub, Jextn, M.Canina</author>
+	<copyright>Copyright (C) 2005 - 2011 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>development@cc-hub.org</authorEmail>
+	<authorUrl>http://www.cc-hub.org; http://www.jextn.com</authorUrl>
+	<version>0.8beta</version>
+	<description>Get the principal categories from Cyclos via CC-Marketplace Component.
+	Based on the CyclosCategories Modul from cyclos.org</description>
+    <files>
+        <filename>mod_ccmp_cycloscategories.xml</filename>
+        <filename module="mod_ccmp_cycloscategories">mod_ccmp_cycloscategories.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/default.css</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+<config>
+  <fields name="params">
+	<fieldset name="webcannel" label="Webchannel Option"
+	addfieldpath="/administrator/components/com_ccmarketplace/models/fields">
+		<field name="id" type="modal_webchannels"
+			label="Web Channel"
+			required="true"
+			description="Web Channel"
+		/>
+  <!-- Item ID belongs to the Menu ID that belongs to the category selection     -->
+		<field name="itemid" type="text"
+			label="Menu ID"
+			required="true"
+			description="GET the menu ID that belongs to the category selection"
+		/>
+	</fieldset>
+    <fieldset name="basic">
+      <!-- <field name="cyclos_server_root" type="text" default="http://www.cyclos.org/cyclos_en/" label="Server URL" description="example: http://192.168.0.1:8080/cyclos" />
+	  <field name="adsuser" type="text" default="" label="Webservices user" description="The user of webservice client who has permissions to show advertisements in Cyclos" />
+	  <field name="adspass" type="text" default="" label="Webservices password" description="The password of webservice client  who has permissions to show advertisements in Cyclos" /> -->
+      <field name="@spacer" type="spacer" default="" label="" description="" />
+      <field name="showCategories" type="radio" default="ALL" label="List categories" description="Display all categories or only leaf categories (categories with no children)." >
+        <option value="ALL">Categories by levels</option>
+        <option value="LEAF">Only leaf categories</option>
+      </field>
+      <field name="menuDepth" type="radio" default="1" label="Menu levels to display" description="Sets how many level categories the menu should display. This is used only when 'Categories by levels' is selected" >
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+      </field>
+      <field name="shCountOffer" type="radio" default="1" label="Display count offer by category" description="Displays counts near categories names" >
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </field>
+      <field name="@spacer" type="spacer" default="" label="" description="" />
+      <field name="moduleclass_sfx" type="text" default="_cycloscats module_menu"
+           label="Module Class Suffix"
+           description="A suffix to be applied to the css class of the module
+                       (table.moduletable), this allows individual module styling" />
+
+    </fieldset>
+  </fields>
+</config>
+</extension>

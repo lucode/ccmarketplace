@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" method="upgrade" version="2.5.0">
+
+	<name>CCMarketplace</name>
+	<creationDate>Dez 2012</creationDate>
+	<author>cc-hub.org</author>
+	<authorEmail>development@cc-hub.org</authorEmail>
+	<authorUrl>http://www.cc-hub.org</authorUrl>
+	<copyright>All rights reserved</copyright>
+	<license>GPL 2</license>
+	<version>0.96</version>
+	<description>CC-Marketplace, Classifieds Ads for Community Currencies</description>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+			<file driver="mysql">install.mysql.sql</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+
+    <files folder="site">
+		<folder>assets</folder>
+		<folder>classes</folder>
+		<folder>includes</folder>
+		<folder>language</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<filename>index.html</filename>
+		<filename>ccmarketplace.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+    </files>
+
+    <languages folder="site">
+		<language tag="en-GB">en-GB.com_ccmarketplace.ini</language>
+		<language tag="de-DE">de-DE.com_ccmarketplace.ini</language> 
+	</languages>
+
+	<administration>
+
+		<menu img="components/com_ccmarketplace/images/system/icon-16-marketplace.png">CC-Marketplace</menu>
+
+		<files folder="admin">
+			<folder>assets</folder>
+			<folder>classes</folder>
+			<folder>controllers</folder>
+			<folder>images</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>admin.ccmarketplace.php</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>install.mysql.utf8.sql</filename>
+			<filename>install.mysql.sql</filename>
+			<filename>ccmarketplace.php</filename>
+			<filename>uninstall.mysql.sql</filename>
+		</files>
+
+		<languages folder="admin">
+			<language tag="en-GB">en-GB.com_ccmarketplace.ini</language>
+			<language tag="en-GB">en-GB.com_ccmarketplace.sys.ini</language>
+		</languages>
+
+	</administration>
+
+    <installfile>install.php</installfile>
+
+</install>
+

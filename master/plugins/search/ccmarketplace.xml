@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension version="1.6" type="plugin" group="search" method="upgrade">
+
+	<name>Search - CCMarketplace</name>
+	<author>CC-Hub, Jextn</author>
+	<creationDate>October 2012</creationDate>
+	<copyright>Copyright (C) 2005 - 2012 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>development@cc-hub.org</authorEmail>
+	<authorUrl>http://www.cc-hub.org; http://www.jextn.com</authorUrl>
+	<version>0.8 beta</version>
+	<description>Search Plugin for CCMarketplace</description>
+	
+	<files>
+		<filename plugin="ccmarketplace">ccmarketplace.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<params/>
+	
+</extension>

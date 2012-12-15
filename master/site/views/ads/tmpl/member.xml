@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="CCMP_VIEW_MEMBER" option="CCMP_VIEW_MEMBER">
+		<message>
+			<![CDATA[CCMP_VIEW_MEMBER]]>
+		</message>
+	</layout>
+
+	<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request"
+			addfieldpath="/administrator/components/com_ccmarketplace/models/fields">
+			<field name="id" type="modal_webchannels"
+				label="CCMP_WEBCHANNELS_LABEL"
+				required="true"
+				description="CCMP_WEBCHANNELS_DESC"
+			/>
+		</fieldset>
+	</fields>
+
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+
+		<!-- Basic options. -->
+		<fieldset name="basic"
+			label="CCMP_MEMBER_PARAMS_LABEL">
+
+			<field
+				name="show_mem_image"
+				type="radio"
+				label="CCMP_MEM_SHOWIMAGE_LABEL"
+				description="CCMP_MEM_SHOWIMAGE_DESC"
+				default="1">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+
+			<field
+			name="member_per_page"
+			type="text"
+			default="5"
+			label="CCMP_MEMBER_PER_PAGE_LABEL"
+			description="CCMP_MEMBER_PER_PAGE_DESC" />
+		</fieldset>
+	</fields>
+
+</metadata>
